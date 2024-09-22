@@ -1,0 +1,17 @@
+meme_dict = {
+            "CRINGE": "Algo excepcionalmente raro o embarazoso",
+            "LOL": "Una respuesta común a algo gracioso",
+            "ROFL" : "Una respuesta a una broma",
+            "SHEESH" : "Ligera desaprobación",
+            "CREEPY" : "Aterrador, siniestro",
+            "AGGRO" : "Ponerse agresivo/enojado"
+            }
+print("Bienvenid@. Ahora seré tu diccionario virtual que te dará información actual(algunas palabras modernas), cuando lo necesites.            Lo único que tienes que hacer es escribir la palabra cuyo sgnificado necesitas abajo y te aparecerá su definición, pero solo podré darle dicha definición 5 veces. Espero serle de utilidad. ")
+for i in range(5):
+    word = input("Escribe una palabra que no entiendas (¡con mayúsculas!): ")
+    if word in meme_dict.keys():
+        # ¿Qué debemos hacer si se encuentra la palabra?
+        print(word,":",meme_dict[word])
+    else:
+        print("Esta palabra no existe, vuelva a escribirla por favor.")
+        # ¿Qué hacer si no se encuentra la palabra?
